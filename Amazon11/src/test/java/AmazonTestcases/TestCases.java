@@ -2,6 +2,8 @@ package AmazonTestcases;
 
 import org.testng.annotations.Test;
 
+import java.util.Set;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -44,17 +46,17 @@ public class TestCases extends BaseClass{
 		//List<WebElement>products=driver.findElements(By.xpath("//span[@class='a-size-medium a-color-base a-text-normal']"));
 		//int prodcount=products.size();
 		//System.out.println("size :"+prodcount);
-        /*System.out.println(brandname);
+        System.out.println(brandname);
 		System.out.println(brandtagname);
 		System.out.println(brandclassname);
 		driver.navigate().back();
 		driver.navigate().forward();
 		driver.navigate().refresh();
 		driver.navigate().to("https://www.swiggy.com/");
-		driver.findElement(By.xpath("//img[@class='sc-koXPp jheTCm'][7]"));*/
+		driver.findElement(By.xpath("//img[@class='sc-koXPp jheTCm'][7]"));
 		
-		//driver.navigate().quit();
-	
+		driver.navigate().quit();
+}*/
 
 	/*@BeforeMethod
 	public void initialization2()
@@ -71,7 +73,8 @@ public class TestCases extends BaseClass{
         	driver.findElement(By.xpath("//input[@id='name']")).sendKeys("Archana");
         	driver.findElement(By.xpath("//input[@id='email']")).sendKeys("archanaan@gmail.com");
         	driver.findElement(By.xpath("//input[@id='phone']")).sendKeys("9562060060");
-        	WebElement dropdown=driver.findElement(By.id("natioanality"));
+  
+        	WebElement dropdown=driver.findElement(By.id("nationality"));
         	Select drp=new Select(dropdown);
         	drp.selectByVisibleText("India");
         	WebElement dropdown1=driver.findElement(By.id("residence_country"));
@@ -94,11 +97,22 @@ public class TestCases extends BaseClass{
 	}
 	
 @Test
-public void TC03(){
+public void TC03() throws InterruptedException{
 	System.out.println("Testcase 3");
 	driver.findElement(By.name("field-keywords")).sendKeys("laptop");
 	driver.findElement(By.id("nav-search-submit-button")).click();
-	driver.findElement(By.xpath("//li[@class='a-spacing-micro'])[4]")).click();
+	driver.findElement(By.xpath("(//i[@class='a-icon a-icon-checkbox'])[4]")).click();//checkbox
+	boolean seachButtonStatus=driver.findElement(By.id("twotabsearchtextbox")).isDisplayed();
+	System.out.println(seachButtonStatus);
+	boolean locationBoxStatus=driver.findElement(By.id("nav-search-submit-button")).isEnabled();
+	System.out.println(locationBoxStatus);//displayed and enabled
+	driver.findElement(By.xpath("//input[@id='twotabsearchtextbox']")).clear();
+
+
 	
+
 	}
+	
 }
+    
+

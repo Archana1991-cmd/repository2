@@ -2,40 +2,38 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-12T23:17:46 IST" name="Default suite" finished-at="2024-08-12T23:18:26 IST" duration-ms="39798">
+  <suite started-at="2024-08-13T22:51:23 IST" name="Default suite" finished-at="2024-08-13T22:53:05 IST" duration-ms="102087">
     <groups>
     </groups>
-    <test started-at="2024-08-12T23:17:46 IST" name="Default test" finished-at="2024-08-12T23:18:26 IST" duration-ms="39798">
+    <test started-at="2024-08-13T22:51:23 IST" name="Default test" finished-at="2024-08-13T22:53:05 IST" duration-ms="102087">
       <class name="AmazonTestcases.TestCases">
-        <test-method is-config="true" signature="initialization3()[pri:0, instance:AmazonTestcases.TestCases@5b8dfcc1]" started-at="2024-08-12T23:17:46 IST" name="initialization3" finished-at="2024-08-12T23:18:05 IST" duration-ms="18529" status="PASS">
+        <test-method is-config="true" signature="initialization3()[pri:0, instance:AmazonTestcases.TestCases@747ddf94]" started-at="2024-08-13T22:51:23 IST" name="initialization3" finished-at="2024-08-13T22:51:59 IST" duration-ms="35464" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialization3 -->
-        <test-method signature="TC03()[pri:0, instance:AmazonTestcases.TestCases@5b8dfcc1]" started-at="2024-08-12T23:18:05 IST" name="TC03" finished-at="2024-08-12T23:18:26 IST" duration-ms="20971" status="FAIL">
-          <exception class="org.openqa.selenium.InvalidSelectorException">
+        <test-method signature="TC03()[pri:0, instance:AmazonTestcases.TestCases@747ddf94]" started-at="2024-08-13T22:51:59 IST" name="TC03" finished-at="2024-08-13T22:53:05 IST" duration-ms="65964" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
             <message>
-              <![CDATA[invalid selector
-from javascript error: {"status":32,"value":"Unable to locate an element with the xpath expression //li[@class='a-spacing-micro'])[4] because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '//li[@class='a-spacing-micro'])[4]' is not a valid XPath expression."}
+              <![CDATA[element not interactable
   (Session info: MicrosoftEdge=127.0.2651.98)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
 Build info: version: '4.23.0', revision: '4df0a231af'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [783d303a7ca70fcb58e9894275ae3882, findElement {value=//li[@class='a-spacing-micro'])[4], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 127.0.2651.98, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:59199}, msedge: {msedgedriverVersion: 127.0.2651.98 (9996f88545e1..., userDataDir: C:\Users\lenovo\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59199/devtoo..., se:cdpVersion: 127.0.2651.98, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 783d303a7ca70fcb58e9894275ae3882]]>
+Command: [af178fe2f97c93eda46c14a8e591ddcf, clickElement {id=f.92D17A8268E02A679911954F338CC514.d.C24CFFD84F919368D9DC7114C12B3BA0.e.164}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 127.0.2651.98, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:58200}, msedge: {msedgedriverVersion: 127.0.2651.98 (9996f88545e1..., userDataDir: C:\Users\lenovo\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58200/devtoo..., se:cdpVersion: 127.0.2651.98, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (af178fe2f97c93eda46c14a8e591ddcf)] -> xpath: (//span[@class='a-button-inner'])[5]]
+Session ID: af178fe2f97c93eda46c14a8e591ddcf]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector
-from javascript error: {"status":32,"value":"Unable to locate an element with the xpath expression //li[@class='a-spacing-micro'])[4] because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '//li[@class='a-spacing-micro'])[4]' is not a valid XPath expression."}
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: MicrosoftEdge=127.0.2651.98)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
 Build info: version: '4.23.0', revision: '4df0a231af'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [783d303a7ca70fcb58e9894275ae3882, findElement {value=//li[@class='a-spacing-micro'])[4], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 127.0.2651.98, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:59199}, msedge: {msedgedriverVersion: 127.0.2651.98 (9996f88545e1..., userDataDir: C:\Users\lenovo\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59199/devtoo..., se:cdpVersion: 127.0.2651.98, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 783d303a7ca70fcb58e9894275ae3882
+Command: [af178fe2f97c93eda46c14a8e591ddcf, clickElement {id=f.92D17A8268E02A679911954F338CC514.d.C24CFFD84F919368D9DC7114C12B3BA0.e.164}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 127.0.2651.98, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:58200}, msedge: {msedgedriverVersion: 127.0.2651.98 (9996f88545e1..., userDataDir: C:\Users\lenovo\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58200/devtoo..., se:cdpVersion: 127.0.2651.98, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (af178fe2f97c93eda46c14a8e591ddcf)] -> xpath: (//span[@class='a-button-inner'])[5]]
+Session ID: af178fe2f97c93eda46c14a8e591ddcf
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -48,11 +46,9 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
-at AmazonTestcases.TestCases.TC03(TestCases.java:101)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at AmazonTestcases.TestCases.TC03(TestCases.java:120)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -83,7 +79,7 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC03 -->
