@@ -5,8 +5,8 @@
     <classes>
       <class name="AmazonTestcases.TestCases">
         <methods>
-          <include name="TC01"/>
-          <include name="initialization"/>
+          <include name="TC04"/>
+          <include name="initialization3"/>
         </methods>
       </class> <!-- AmazonTestcases.TestCases -->
     </classes>

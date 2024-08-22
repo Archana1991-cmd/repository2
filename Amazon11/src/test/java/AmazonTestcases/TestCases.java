@@ -2,13 +2,30 @@ package AmazonTestcases;
 
 import org.testng.annotations.Test;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.Toolkit;
+import java.awt.Window;
+import java.awt.datatransfer.StringSelection;
+import java.awt.event.KeyEvent;
+import java.time.Duration;
 import java.util.Set;
+import java.util.function.Function;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 
 import AutomationCore.BaseClass;
 
@@ -107,12 +124,104 @@ public void TC03() throws InterruptedException{
 	boolean locationBoxStatus=driver.findElement(By.id("nav-search-submit-button")).isEnabled();
 	System.out.println(locationBoxStatus);//displayed and enabled
 	driver.findElement(By.xpath("//input[@id='twotabsearchtextbox']")).clear();
-
-
-	
-
+	driver.findElement(By.name("field-keywords")).sendKeys("iphone");
+	driver.findElement(By.id("nav-search-submit-button")).click();
+	driver.findElement(By.xpath("(//span[@class='a-size-medium a-color-base a-text-normal'])[3]"));
+	String parentWindow=driver.getWindowHandle();
+	Set<String>childWindows=driver.getWindowHandles();
+	for(String actual:childWindows) {
+		if(!actual.equalsIgnoreCase(parentWindow)) {
+			driver.switchTo().window(actual);
+			System.out.println(driver.getTitle());
+			Thread.sleep(2000);
+			driver.findElement(By.xpath("//button[@id='a-autoid-3-announce']"));
+		}
 	}
+	driver.switchTo().window(parentWindow);
+	driver.navigate().refresh();
+}
+@SuppressWarnings("unchecked")
+@Test
+	public void TC04() throws InterruptedException {
+	driver.get("https://demoqa.com/alerts");
+	driver.findElement(By.id("confirmButton")).click();
+	WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(2));
+	wait.until(ExpectedConditionsframeToBeavailableAndswitchToIt("frame1"));
+	driver.switchTo().alert().accept();
+	driver.findElement(By.id("confirmButton")).click();
+	driver.switchTo().alert().dismiss();
+	
+	
+	driver.get("https://demoqa.com/frames");
+	driver.switchTo().frame("frame1");
+	String value=driver.findElement(By.id("sampleHeading")).getText();
+	System.out.println(value);
+	driver.switchTo().defaultContent();
 	
 }
+private Function ExpectedConditionsframeToBeavailableAndswitchToIt(String string) {
+	// TODO Auto-generated method stub
+	return null;
+}
+
+@Test
+
+public void TC05() throws AWTException, InterruptedException {
+	driver.get("https://ps.uci.edu/~franklin/doc/file_upload.html");
+	Thread.sleep(4000);
+	WebElement choosefile=driver.findElement(By.name("userfile"));
+	WebElement submit=driver.findElement(By.xpath("//input[@type='submit']"));
+	
+	JavascriptExecutor executor=(JavascriptExecutor)driver;
+	executor.executeScript("arguments[0]", choosefile);
+	setClickBoardData("C:\\Users\\lenovo\\Pictures\\Saved Pictures\\poornasree.png");
+	
+	
+	//choosefile.click();
+	Thread.sleep(2000);
+	Robot robot=new Robot();
+	robot.delay(300);
+	robot.keyPress(KeyEvent.VK_CONTROL);
+	robot.keyPress(KeyEvent.VK_V);
+	robot.keyRelease(KeyEvent.VK_V);
+	robot.keyRelease(KeyEvent.VK_CONTROL);
+	robot.keyPress(KeyEvent.VK_ENTER);
+	robot.delay(300);
+	robot.keyRelease(KeyEvent.VK_ENTER);
+	submit.click();
+	}
+
+private void setClickBoardData(String path) {
+	StringSelection stringSelection=new StringSelection(path);
+	Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection,null);
+	
+}
+@Test
+public void TC06() {
+	driver.get("https://www.amazon.in/");
+	JavascriptExecutor executor=(JavascriptExecutor)driver;
+	executor.executeScript("window.scrollBy(0,1250)");
+	System.out.println(" Test case 7");
+}
+@BeforeSuite
+public void beforeSuiteexample() {
+	System.out.println("This is before suite methord");
+}
+@AfterSuite
+public void afterSuiteexample() {
+	System.out.println("This is after suite methord");
+}
+@BeforeTest
+public void beforeTestexample() {
+	System.out.println("This is before test methord");
+}
+@AfterTest
+public void afterTestexample() {
+	System.out.println("This is after test methord");
+}
+
+}
+
+
     
 

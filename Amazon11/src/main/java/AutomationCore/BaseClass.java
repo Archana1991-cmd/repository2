@@ -1,5 +1,7 @@
 package AutomationCore;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -17,6 +19,7 @@ public class BaseClass {
 	   }else if (browsername.equalsIgnoreCase("Edge"))
 	   {
 		   driver=new EdgeDriver();
+		  // driver.manage().timeouts().implicitlyWait(2,TimeUnit.DAYS);
 	   }else if (browsername.equalsIgnoreCase("firefox"))
 	   {
 		   driver=new FirefoxDriver();
