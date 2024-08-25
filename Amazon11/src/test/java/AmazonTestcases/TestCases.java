@@ -1,6 +1,7 @@
 package AmazonTestcases;
 
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import java.awt.AWTException;
 import java.awt.Robot;
@@ -21,8 +22,14 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterGroups;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeGroups;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
@@ -33,6 +40,7 @@ import AutomationCore.BaseClass;
 public class TestCases extends BaseClass{
 	
 	WebDriver driver;
+	SoftAssert softassert;
 	
 	/*@BeforeMethod
 	public void initialization()
@@ -111,15 +119,18 @@ public class TestCases extends BaseClass{
 		driver=browserInitilization("Edge");
 		driver.get("https://www.amazon.in/");
 		driver.manage().window().maximize();
+		softassert=new SoftAssert();
+		
 	}
 	
-@Test
+@Test(priority=2)
 public void TC03() throws InterruptedException{
 	System.out.println("Testcase 3");
 	driver.findElement(By.name("field-keywords")).sendKeys("laptop");
 	driver.findElement(By.id("nav-search-submit-button")).click();
 	driver.findElement(By.xpath("(//i[@class='a-icon a-icon-checkbox'])[4]")).click();//checkbox
 	boolean seachButtonStatus=driver.findElement(By.id("twotabsearchtextbox")).isDisplayed();
+	softassert.assertEquals(seachButtonStatus, true);//softassertion
 	System.out.println(seachButtonStatus);
 	boolean locationBoxStatus=driver.findElement(By.id("nav-search-submit-button")).isEnabled();
 	System.out.println(locationBoxStatus);//displayed and enabled
@@ -139,6 +150,7 @@ public void TC03() throws InterruptedException{
 	}
 	driver.switchTo().window(parentWindow);
 	driver.navigate().refresh();
+	softassert.assertAll();
 }
 @SuppressWarnings("unchecked")
 @Test
@@ -200,7 +212,9 @@ private void setClickBoardData(String path) {
 public void TC06() {
 	driver.get("https://www.amazon.in/");
 	JavascriptExecutor executor=(JavascriptExecutor)driver;
-	executor.executeScript("window.scrollBy(0,1250)");
+	executor.executeScript("window.scrollBy(0,250)");
+	boolean status=driver.findElement(By.xpath("//div[@id='nav-cart-count-container']")).isDisplayed();//hardassertion
+	Assert.assertEquals(status, true);
 	System.out.println(" Test case 7");
 }
 @BeforeSuite
@@ -219,7 +233,30 @@ public void beforeTestexample() {
 public void afterTestexample() {
 	System.out.println("This is after test methord");
 }
-
+@BeforeMethod
+public void beforeMethordexample() {
+	System.out.println("This is before methord");
+}
+@AfterMethod
+public void afterMethordexample() {
+	System.out.println("This is  after methord");
+}
+@BeforeClass
+public void beforeClassexample() {
+	System.out.println("This is beforeclass methord");
+}
+@AfterClass
+public void afterClassexample() {
+	System.out.println("This is afterclass methord");
+}
+@BeforeGroups
+public void beforeGroupexample() {
+	System.out.println("This is beforegroup methord");
+}
+@AfterGroups
+public void afterGroupexample() {
+	System.out.println("This is aftergroup methord");
+}
 }
 
 

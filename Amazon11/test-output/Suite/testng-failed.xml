@@ -5,8 +5,12 @@
     <classes>
       <class name="AmazonTestcases.TestCases">
         <methods>
-          <include name="TC04"/>
+          <include name="beforeSuiteexample"/>
+          <include name="afterSuiteexample"/>
+          <include name="beforeTestexample"/>
+          <include name="TC06"/>
           <include name="initialization3"/>
+          <include name="afterTestexample"/>
         </methods>
       </class> <!-- AmazonTestcases.TestCases -->
     </classes>

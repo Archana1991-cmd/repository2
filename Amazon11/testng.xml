@@ -6,6 +6,7 @@
       <class name="AmazonTestcases.TestCases">
       <methods>
 		 <include name="TC06"></include>
+		 <include name="TC03"></include>
 		  
 			  <!--<include name="TC02"></include> -->
 			<!--<include name="TC01"></include>-->
