@@ -5,11 +5,15 @@
     <classes>
       <class name="AmazonTestcases.TestCases">
         <methods>
+          <include name="beforeClassexample"/>
           <include name="beforeSuiteexample"/>
           <include name="afterSuiteexample"/>
           <include name="beforeTestexample"/>
-          <include name="TC06"/>
+          <include name="testGoogle" invocation-numbers="1 3 4"/>
+          <include name="afterClassexample"/>
+          <include name="afterMethordexample"/>
           <include name="initialization3"/>
+          <include name="beforeMethordexample"/>
           <include name="afterTestexample"/>
         </methods>
       </class> <!-- AmazonTestcases.TestCases -->

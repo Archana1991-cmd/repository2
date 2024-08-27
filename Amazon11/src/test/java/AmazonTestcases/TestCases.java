@@ -33,6 +33,7 @@ import org.testng.annotations.BeforeGroups;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
 
 import AutomationCore.BaseClass;
 
@@ -257,8 +258,25 @@ public void beforeGroupexample() {
 public void afterGroupexample() {
 	System.out.println("This is aftergroup methord");
 }
+@Test(dataProvider="searchProvider")
+public void testGoogle(String name) 
+{
+driver.get("https://www.google.com/");
+driver.findElement(By.name("q")).sendKeys(name);
+driver.findElement(By.name("btnK")).click();
 }
+@DataProvider(name="searchProvider")
+public static Object[][]getDataFromDataProvider()
+{
+	return new Object[][]
+			{{"Athira shaji"},
+		{"Ann Mary"},
+		{"Remya k"},
+		{"Archana"},
+		{"Reshma M"}};
+	}
 
+}
 
     
 

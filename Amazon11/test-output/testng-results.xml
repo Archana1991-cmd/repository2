@@ -1,49 +1,352 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="2" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-25T23:11:51 IST" name="Suite" finished-at="2024-08-25T23:12:29 IST" duration-ms="38353">
+  <suite started-at="2024-08-27T19:55:06 IST" name="Suite" finished-at="2024-08-27T19:58:12 IST" duration-ms="185535">
     <groups>
     </groups>
-    <test started-at="2024-08-25T23:11:51 IST" name="Test" finished-at="2024-08-25T23:12:29 IST" duration-ms="38353">
+    <test started-at="2024-08-27T19:55:06 IST" name="Test" finished-at="2024-08-27T19:58:12 IST" duration-ms="185535">
       <class name="AmazonTestcases.TestCases">
-        <test-method is-config="true" signature="beforeSuiteexample()[pri:0, instance:AmazonTestcases.TestCases@411f53a0]" started-at="2024-08-25T23:11:51 IST" name="beforeSuiteexample" finished-at="2024-08-25T23:11:51 IST" duration-ms="47" status="PASS">
+        <test-method is-config="true" signature="beforeSuiteexample()[pri:0, instance:AmazonTestcases.TestCases@3c41ed1d]" started-at="2024-08-27T19:55:06 IST" name="beforeSuiteexample" finished-at="2024-08-27T19:55:06 IST" duration-ms="34" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuiteexample -->
-        <test-method is-config="true" signature="beforeTestexample()[pri:0, instance:AmazonTestcases.TestCases@411f53a0]" started-at="2024-08-25T23:11:51 IST" name="beforeTestexample" finished-at="2024-08-25T23:11:51 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeTestexample()[pri:0, instance:AmazonTestcases.TestCases@3c41ed1d]" started-at="2024-08-27T19:55:06 IST" name="beforeTestexample" finished-at="2024-08-27T19:55:06 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTestexample -->
-        <test-method is-config="true" signature="beforeClassexample()[pri:0, instance:AmazonTestcases.TestCases@411f53a0]" started-at="2024-08-25T23:11:51 IST" name="beforeClassexample" finished-at="2024-08-25T23:11:51 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeClassexample()[pri:0, instance:AmazonTestcases.TestCases@3c41ed1d]" started-at="2024-08-27T19:55:06 IST" name="beforeClassexample" finished-at="2024-08-27T19:55:06 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClassexample -->
-        <test-method is-config="true" signature="beforeMethordexample()[pri:0, instance:AmazonTestcases.TestCases@411f53a0]" started-at="2024-08-25T23:11:51 IST" name="beforeMethordexample" finished-at="2024-08-25T23:11:51 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="beforeMethordexample()[pri:0, instance:AmazonTestcases.TestCases@3c41ed1d]" started-at="2024-08-27T19:55:06 IST" name="beforeMethordexample" finished-at="2024-08-27T19:55:06 IST" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethordexample -->
-        <test-method is-config="true" signature="initialization3()[pri:0, instance:AmazonTestcases.TestCases@411f53a0]" started-at="2024-08-25T23:11:51 IST" name="initialization3" finished-at="2024-08-25T23:12:16 IST" duration-ms="25357" status="PASS">
+        <test-method is-config="true" signature="initialization3()[pri:0, instance:AmazonTestcases.TestCases@3c41ed1d]" started-at="2024-08-27T19:55:06 IST" name="initialization3" finished-at="2024-08-27T19:55:36 IST" duration-ms="29972" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialization3 -->
-        <test-method signature="TC06()[pri:0, instance:AmazonTestcases.TestCases@411f53a0]" started-at="2024-08-25T23:12:16 IST" name="TC06" finished-at="2024-08-25T23:12:29 IST" duration-ms="12778" status="PASS">
+        <test-method signature="testGoogle(java.lang.String)[pri:0, instance:AmazonTestcases.TestCases@3c41ed1d]" started-at="2024-08-27T19:55:36 IST" name="testGoogle" data-provider="searchProvider" finished-at="2024-08-27T19:55:47 IST" duration-ms="11030" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Athira shaji]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC06 -->
-        <test-method is-config="true" signature="afterMethordexample()[pri:0, instance:AmazonTestcases.TestCases@411f53a0]" started-at="2024-08-25T23:12:29 IST" name="afterMethordexample" finished-at="2024-08-25T23:12:29 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- testGoogle -->
+        <test-method is-config="true" signature="afterMethordexample()[pri:0, instance:AmazonTestcases.TestCases@3c41ed1d]" started-at="2024-08-27T19:55:48 IST" name="afterMethordexample" finished-at="2024-08-27T19:55:48 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethordexample -->
-        <test-method is-config="true" signature="afterClassexample()[pri:0, instance:AmazonTestcases.TestCases@411f53a0]" started-at="2024-08-25T23:12:29 IST" name="afterClassexample" finished-at="2024-08-25T23:12:29 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="beforeMethordexample()[pri:0, instance:AmazonTestcases.TestCases@3c41ed1d]" started-at="2024-08-27T19:55:48 IST" name="beforeMethordexample" finished-at="2024-08-27T19:55:48 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethordexample -->
+        <test-method is-config="true" signature="initialization3()[pri:0, instance:AmazonTestcases.TestCases@3c41ed1d]" started-at="2024-08-27T19:55:48 IST" name="initialization3" finished-at="2024-08-27T19:56:09 IST" duration-ms="21549" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization3 -->
+        <test-method signature="testGoogle(java.lang.String)[pri:0, instance:AmazonTestcases.TestCases@3c41ed1d]" started-at="2024-08-27T19:56:09 IST" name="testGoogle" data-provider="searchProvider" finished-at="2024-08-27T19:56:21 IST" duration-ms="12230" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Ann Mary]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: MicrosoftEdge=128.0.2739.42)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [c57b5f12cf84a2c79d337d962fea09c4, clickElement {id=f.25057D0D57CC7291B16D75CC6C1900CD.d.6328D84BBBCDF007526021C9B79E6547.e.17}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 128.0.2739.42, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:59816}, msedge: {msedgedriverVersion: 128.0.2739.42 (e015505d79c9..., userDataDir: C:\Users\lenovo\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59816/devtoo..., se:cdpVersion: 128.0.2739.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (c57b5f12cf84a2c79d337d962fea09c4)] -> name: btnK]
+Session ID: c57b5f12cf84a2c79d337d962fea09c4]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: MicrosoftEdge=128.0.2739.42)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [c57b5f12cf84a2c79d337d962fea09c4, clickElement {id=f.25057D0D57CC7291B16D75CC6C1900CD.d.6328D84BBBCDF007526021C9B79E6547.e.17}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 128.0.2739.42, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:59816}, msedge: {msedgedriverVersion: 128.0.2739.42 (e015505d79c9..., userDataDir: C:\Users\lenovo\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59816/devtoo..., se:cdpVersion: 128.0.2739.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (c57b5f12cf84a2c79d337d962fea09c4)] -> name: btnK]
+Session ID: c57b5f12cf84a2c79d337d962fea09c4
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at AmazonTestcases.TestCases.testGoogle(TestCases.java:266)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGoogle -->
+        <test-method is-config="true" signature="afterMethordexample()[pri:0, instance:AmazonTestcases.TestCases@3c41ed1d]" started-at="2024-08-27T19:56:21 IST" name="afterMethordexample" finished-at="2024-08-27T19:56:22 IST" duration-ms="32" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethordexample -->
+        <test-method is-config="true" signature="beforeMethordexample()[pri:0, instance:AmazonTestcases.TestCases@3c41ed1d]" started-at="2024-08-27T19:56:22 IST" name="beforeMethordexample" finished-at="2024-08-27T19:56:22 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethordexample -->
+        <test-method is-config="true" signature="initialization3()[pri:0, instance:AmazonTestcases.TestCases@3c41ed1d]" started-at="2024-08-27T19:56:22 IST" name="initialization3" finished-at="2024-08-27T19:56:46 IST" duration-ms="24926" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization3 -->
+        <test-method signature="testGoogle(java.lang.String)[pri:0, instance:AmazonTestcases.TestCases@3c41ed1d]" started-at="2024-08-27T19:56:46 IST" name="testGoogle" data-provider="searchProvider" finished-at="2024-08-27T19:57:00 IST" duration-ms="13269" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Remya k]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGoogle -->
+        <test-method is-config="true" signature="afterMethordexample()[pri:0, instance:AmazonTestcases.TestCases@3c41ed1d]" started-at="2024-08-27T19:57:00 IST" name="afterMethordexample" finished-at="2024-08-27T19:57:00 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethordexample -->
+        <test-method is-config="true" signature="beforeMethordexample()[pri:0, instance:AmazonTestcases.TestCases@3c41ed1d]" started-at="2024-08-27T19:57:00 IST" name="beforeMethordexample" finished-at="2024-08-27T19:57:00 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethordexample -->
+        <test-method is-config="true" signature="initialization3()[pri:0, instance:AmazonTestcases.TestCases@3c41ed1d]" started-at="2024-08-27T19:57:00 IST" name="initialization3" finished-at="2024-08-27T19:57:23 IST" duration-ms="23338" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization3 -->
+        <test-method signature="testGoogle(java.lang.String)[pri:0, instance:AmazonTestcases.TestCases@3c41ed1d]" started-at="2024-08-27T19:57:23 IST" name="testGoogle" data-provider="searchProvider" finished-at="2024-08-27T19:57:32 IST" duration-ms="9021" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Archana]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: MicrosoftEdge=128.0.2739.42)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [d34904c239236b8707aa51b4975130da, clickElement {id=f.24DDB7C88E4FB921D20B2C83290FB176.d.28FD641B276280C24B5DFB54786B0E43.e.17}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 128.0.2739.42, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60099}, msedge: {msedgedriverVersion: 128.0.2739.42 (e015505d79c9..., userDataDir: C:\Users\lenovo\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60099/devtoo..., se:cdpVersion: 128.0.2739.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (d34904c239236b8707aa51b4975130da)] -> name: btnK]
+Session ID: d34904c239236b8707aa51b4975130da]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: MicrosoftEdge=128.0.2739.42)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [d34904c239236b8707aa51b4975130da, clickElement {id=f.24DDB7C88E4FB921D20B2C83290FB176.d.28FD641B276280C24B5DFB54786B0E43.e.17}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 128.0.2739.42, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60099}, msedge: {msedgedriverVersion: 128.0.2739.42 (e015505d79c9..., userDataDir: C:\Users\lenovo\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60099/devtoo..., se:cdpVersion: 128.0.2739.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (d34904c239236b8707aa51b4975130da)] -> name: btnK]
+Session ID: d34904c239236b8707aa51b4975130da
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at AmazonTestcases.TestCases.testGoogle(TestCases.java:266)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGoogle -->
+        <test-method is-config="true" signature="afterMethordexample()[pri:0, instance:AmazonTestcases.TestCases@3c41ed1d]" started-at="2024-08-27T19:57:32 IST" name="afterMethordexample" finished-at="2024-08-27T19:57:32 IST" duration-ms="47" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethordexample -->
+        <test-method is-config="true" signature="beforeMethordexample()[pri:0, instance:AmazonTestcases.TestCases@3c41ed1d]" started-at="2024-08-27T19:57:32 IST" name="beforeMethordexample" finished-at="2024-08-27T19:57:32 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethordexample -->
+        <test-method is-config="true" signature="initialization3()[pri:0, instance:AmazonTestcases.TestCases@3c41ed1d]" started-at="2024-08-27T19:57:32 IST" name="initialization3" finished-at="2024-08-27T19:58:02 IST" duration-ms="29681" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization3 -->
+        <test-method signature="testGoogle(java.lang.String)[pri:0, instance:AmazonTestcases.TestCases@3c41ed1d]" started-at="2024-08-27T19:58:02 IST" name="testGoogle" data-provider="searchProvider" finished-at="2024-08-27T19:58:12 IST" duration-ms="9913" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Reshma M]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: MicrosoftEdge=128.0.2739.42)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [8e478a261ad4b95f3b50869fdf39371f, clickElement {id=f.0A3CB7D7C3FA9116FF4D03F0F83E9DA7.d.7D028E2CD719486AE29AD1BC3BE91D82.e.17}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 128.0.2739.42, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60205}, msedge: {msedgedriverVersion: 128.0.2739.42 (e015505d79c9..., userDataDir: C:\Users\lenovo\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60205/devtoo..., se:cdpVersion: 128.0.2739.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (8e478a261ad4b95f3b50869fdf39371f)] -> name: btnK]
+Session ID: 8e478a261ad4b95f3b50869fdf39371f]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: MicrosoftEdge=128.0.2739.42)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [8e478a261ad4b95f3b50869fdf39371f, clickElement {id=f.0A3CB7D7C3FA9116FF4D03F0F83E9DA7.d.7D028E2CD719486AE29AD1BC3BE91D82.e.17}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 128.0.2739.42, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60205}, msedge: {msedgedriverVersion: 128.0.2739.42 (e015505d79c9..., userDataDir: C:\Users\lenovo\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60205/devtoo..., se:cdpVersion: 128.0.2739.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (8e478a261ad4b95f3b50869fdf39371f)] -> name: btnK]
+Session ID: 8e478a261ad4b95f3b50869fdf39371f
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at AmazonTestcases.TestCases.testGoogle(TestCases.java:266)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGoogle -->
+        <test-method is-config="true" signature="afterMethordexample()[pri:0, instance:AmazonTestcases.TestCases@3c41ed1d]" started-at="2024-08-27T19:58:12 IST" name="afterMethordexample" finished-at="2024-08-27T19:58:12 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethordexample -->
+        <test-method is-config="true" signature="afterClassexample()[pri:0, instance:AmazonTestcases.TestCases@3c41ed1d]" started-at="2024-08-27T19:58:12 IST" name="afterClassexample" finished-at="2024-08-27T19:58:12 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClassexample -->
-        <test-method is-config="true" signature="afterTestexample()[pri:0, instance:AmazonTestcases.TestCases@411f53a0]" started-at="2024-08-25T23:12:29 IST" name="afterTestexample" finished-at="2024-08-25T23:12:29 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="afterTestexample()[pri:0, instance:AmazonTestcases.TestCases@3c41ed1d]" started-at="2024-08-27T19:58:12 IST" name="afterTestexample" finished-at="2024-08-27T19:58:12 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTestexample -->
-        <test-method is-config="true" signature="afterSuiteexample()[pri:0, instance:AmazonTestcases.TestCases@411f53a0]" started-at="2024-08-25T23:12:30 IST" name="afterSuiteexample" finished-at="2024-08-25T23:12:30 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="afterSuiteexample()[pri:0, instance:AmazonTestcases.TestCases@3c41ed1d]" started-at="2024-08-27T19:58:12 IST" name="afterSuiteexample" finished-at="2024-08-27T19:58:12 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuiteexample -->
